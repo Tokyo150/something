@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple HTML Page</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #dd5d83;
+      color: #333;
+
+      display: flex;
+      justify-content: center;
+      align-items: cente;
+      height: 100vh;
+      transform: translateY(250px);
+    }
+    header {
+      background: #4f46e5;
+      color: white;
+      padding: 1rem 2rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: center;
+    }
+       button {
+        background: linear-gradient(135deg, #dd5d83, #f756dc);
+        color: white;
+        border: none;
+        padding: 12px 28px;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 999px; /* pill shape */
+        cursor: pointer;
+        box-shadow: 0 8px 20px rgba(109, 93, 252, 0.35);
+        transition: all 0.25s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+        
+
+ button:hover {
+    	transform: translateY(-2px) scale(1.05);
+  	box-shadow: 0 12px 28px rgba(109, 93, 252, 0.45);
+    }
+
+  .btn-row {
+  display: flex;
+  justify-content: center; /* center both buttons */
+  gap: 20px;               /* space between them */
+  margin-top: 20px;
+}
+
+    button:active {
+  transform: scale(0.96);
+}
+
+@media (max-width: 360px) {
+  .btn-row {
+    flex-direction: column;
+  }
+}
+
+    .gif {
+  width: 200px;        /* resize if needed */
+  margin: 20px 0;
+  border-radius: 12px;
+}
+
+.container {
+  text-align: center;      /* aligns text AND image */
+  display: flex;
+  flex-direction: column;  /* stack vertically */
+  align-items: center;     /* centers GIF perfectly */
+  gap: 20px;               /* even spacing */
+}
+
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h2>with that being said,i wanted to ask you something</h2>
+      <img src="Img/flower.gif" alt="Cute animation" class="gif" />
+      <p> 
+       <strong>will you be my valentine for the rest of my life?👉👈</strong>
+    </p>
+    <div>
+    <button class="cute-btn" onclick="eleven()">
+  YESSS
+  <span class="heart">❤</span>
+</button>
+
+<button class="cute-btn" onclick="twelve()">
+  No.
+  <span class="heart">💔</span>
+</button>
+</div>
+  </main>
+
+
+  <script>
+    function eleven() {
+       window.location.href = "eleven.html";
+  }
+    function twelve() {
+       window.location.href = "twelve.html";
+  }
+  </script>
+</body>
+</html>
